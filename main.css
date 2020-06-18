@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+header {
+    padding: 50px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.accordion__btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active>.accordion__btn, .accordion__btn:hover {
+    background-color: #ccc;
+}
+
+.accordion__link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding-left: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion__link:hover {
+    color: chocolate;
+}
